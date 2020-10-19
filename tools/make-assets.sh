@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -ex
+#!/usr/bin/env -S bash -e
 #
 # This script assumes a linux environment
 
@@ -11,11 +11,11 @@ mkdir $DES
 
 cp ./assets/assets.json $DES/
 
-if [ -n "${TRAVIS_TAG}" ]; then
-  pushd .. > /dev/null
-  git clone --depth 1 https://github.com/uBlockOrigin/uAssets.git
-  popd > /dev/null
-fi
+#if [ -n "${TRAVIS_TAG}" ]; then
+#  pushd .. > /dev/null
+#  git clone --depth 1 https://github.com/uBlockOrigin/uAssets.git
+#  popd > /dev/null
+#fi
 
 mkdir $DES/thirdparties
 cp -R ../uAssets/thirdparties/hosts-file.net             $DES/thirdparties/

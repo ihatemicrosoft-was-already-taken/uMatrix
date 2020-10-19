@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/usr/bin/env -S bash -e
 #
 # This script assumes a linux environment
 
@@ -9,7 +9,7 @@ DES=./dist/build/uMatrix.chromium
 rm -rf $DES
 mkdir -p $DES
 
-bash ./tools/make-assets.sh $DES
+./tools/make-assets.sh $DES
 
 cp -R ./src/*                           $DES/
 cp -R $DES/_locales/nb                  $DES/_locales/no # Chrome store quirk
