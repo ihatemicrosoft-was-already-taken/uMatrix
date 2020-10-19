@@ -9,8 +9,6 @@ DES=./dist/build/uMatrix.chromium
 rm -rf $DES
 mkdir -p $DES
 
-./tools/make-assets.sh $DES
-
 cp -R ./src/*                           $DES/
 cp -R $DES/_locales/nb                  $DES/_locales/no # Chrome store quirk
 cp    ./platform/chromium/*.js          $DES/js/
