@@ -1,4 +1,4 @@
-## uMatrix<br>[<img src="https://travis-ci.org/gorhill/uMatrix.svg?branch=master" height="16">](https://travis-ci.org/gorhill/uMatrix)
+## uMatrix<br>[<img src="https://travis-ci.org/ihatemicrosoft-was-already-taken/uMatrix.svg?branch=master" height="16">](https://travis-ci.org/ihatemicrosoft-was-already-taken/uMatrix)
 
 Definitely for advanced users.
 

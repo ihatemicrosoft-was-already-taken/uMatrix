@@ -1,11 +1,11 @@
 ---
+language: shell
+os: linux
+dist: focal
 env:
-  language: shell
-  os: linux
-  dist: focal
   jobs:
     - BROWSER=chromium EXT=zip
-  script: "./tools/make-${BROWSER}.sh ${TRAVIS_TAG}"
+script: "./tools/make-${BROWSER}.sh ${TRAVIS_TAG}"
 #deploy:
 #  provider: releases
 #  prerelease: true
